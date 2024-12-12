@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1005140137717",
+    "project_id": "saurav5150",
+    "storage_bucket": "saurav5150.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005140137717:android:5aa322aee693f40af957bc",
+        "android_client_info": {
+          "package_name": "com.example.loginandsignup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI6VOipJBUisk6hS0dr8bH8rxYdSVup-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005140137717:android:66d6336d2b3617acf957bc",
+        "android_client_info": {
+          "package_name": "com.example.loginnsignup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI6VOipJBUisk6hS0dr8bH8rxYdSVup-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

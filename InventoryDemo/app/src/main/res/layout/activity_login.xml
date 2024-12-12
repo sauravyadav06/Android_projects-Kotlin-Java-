@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        tools:context=".LoginActivity">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/adppolicelogo"
+                android:layout_margin="25dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="90dp">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgUser"
+                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/loginkey"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp"
+                style="@style/NoUnderlineTextInputLayout"
+                android:elevation="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/edittext_white_background"
+                    android:drawableRight="@drawable/ic_user"
+                    android:drawableTint="@color/orange"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/lighter_grey"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/orange"
+                style="@style/NoUnderlineTextInputLayout"
+                android:elevation="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/edttext_white_bg"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.1"
+                    android:maxLength="50"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/lighter_grey"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkRemember"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Remember Me"
+                android:textColor="@color/orange"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button_green"
+                    android:text="Login"
+                    android:elevation="10dp"
+                    android:textStyle="bold"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button_red"
+                    android:text="Clear"
+                    android:elevation="10dp"
+                    android:textStyle="bold"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end|bottom">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:text="Version: 1.0.0"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_marginStart="5dp"/>
+            <TextView
+                android:id="@+id/textDeviceId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:text="Device ID: "
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_marginEnd="5dp"
+                android:gravity="end"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:text="@string/footer"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

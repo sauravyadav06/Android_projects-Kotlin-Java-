@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        tools:context=".AssetSearchActivity">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:scaleType="fitStart"
+            android:src="@drawable/adppolicelogo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="ASSET SEARCH"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.12"
+                android:textSize="15sp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="Asset Type" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/searchableAssetType"
+                android:hint="Select Asset Type"
+                android:textColorHint="@color/gray"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/drop_down"
+                android:drawableTint="@color/orange"
+                android:background="@drawable/edittext_grey_background"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.12"
+                android:layout_marginTop="5dp"
+                android:text="Asset Name"
+                android:textSize="15sp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:id="@+id/searchableAssetName"
+                android:hint="Select Asset Name"
+                android:textColorHint="@color/gray"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/drop_down"
+                android:drawableTint="@color/orange"
+                android:background="@drawable/edittext_grey_background"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textPercentage"
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_button_green"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_button_green"
+                        android:text="Search"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/round_button_red"
+                        android:text="Back"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_gravity="bottom"
+                android:text="@string/footer"
+                android:gravity="center"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
